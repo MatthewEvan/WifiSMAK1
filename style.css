@@ -41,7 +41,7 @@ html {
 nav {
   width: 100vw;
   height: 4rem;
-  background-color: hsla(220, 94%, 25%, 0.8);
+  background-color: hsla(220, 78%, 51%, 0.8);
   backdrop-filter: blur(0.4rem);
   /* separator */
   display: grid;
@@ -178,6 +178,7 @@ nav>img {
 }
 #program-akademik > h3 {
   font-size: 2.5rem;
+  font-weight: 800;
 }
 .program-tiles {
   display: grid;
@@ -214,6 +215,49 @@ nav>img {
 }
 
 
+#best {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  width: 100%;
+  background-color: hsla(220, 78%, 51%, 0.8);
+  padding: 2rem 8vw;
+}
+
+#best > h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+
+.best-tiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.best-tiles > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  background-color: hsl(203, 100%, 92%);
+  border-radius: 1rem;
+  padding: 1rem;
+  flex: 1;
+}
+.best-tile-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.best-tile-header h4 {
+  font-size: 1.5rem;
+}
+.best-tile-header svg {
+  height: 1.5rem;
+}
 
 
 /* Jabar Kahiji Image Gallery */
@@ -242,7 +286,7 @@ nav>img {
 footer {
   margin: 4rem 0 0;
   padding: 1.5rem 8vw;
-  background-color: hsla(220, 94%, 25%, 0.8);
+  background-color: hsla(220, 78%, 51%, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -309,6 +353,9 @@ footer {
   .header-description h1 span {
     font-size: 3rem;
   }
+  .best-tiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .footer-logos img:first-child {
     height: 7rem;
@@ -348,14 +395,10 @@ footer {
     text-align: center;
     text-wrap: balance;
   }
-  .header-image-container img {
-    aspect-ratio: 5/2;
-  }
 
   .program-tiles {
     grid-template-columns: 1fr;
   }
-
   #jabar-kahiji-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -376,6 +419,9 @@ footer {
   }
   .container-align{
     gap: 2rem;
+  }
+  .best-tiles {
+    grid-template-columns: 1fr;
   }
 
   #jabar-kahiji-gallery {
