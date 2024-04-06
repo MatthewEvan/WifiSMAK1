@@ -27,7 +27,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 html {
@@ -41,7 +41,7 @@ html {
 nav {
   width: 100vw;
   height: 4rem;
-  background-color: hsl(220, 100%, 59%, 0.8);
+  background-color: hsla(220, 94%, 25%, 0.8);
   backdrop-filter: blur(0.4rem);
   /* separator */
   display: grid;
@@ -168,6 +168,53 @@ nav>img {
 }
 
 
+/* MAIN CONTENT MAIN CONTENT */
+#program-akademik {
+  margin: 0 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+#program-akademik > h3 {
+  font-size: 2.5rem;
+}
+.program-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+
+  /* background styling */
+  background: url(assets/images/BackgroundTambahan.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.program-tiles > div {
+  padding: 1rem;
+  /* background formatting  */
+  background: hsla(0, 0%, 87%, 0.65);
+  border-radius: 1rem;
+  backdrop-filter: blur(1rem);
+  border: 2px solid hsla(0, 0%, 100%, 0.34);
+  transition: all 350ms ease;
+}
+.program-tiles > div h4 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 110%;
+  margin-bottom: 0.5rem;
+}
+.program-tiles > div p {
+  font-weight: 500;
+  text-align: justify;
+}
+
+
+
 
 /* Jabar Kahiji Image Gallery */
 #jabar-kahiji-gallery {
@@ -191,21 +238,11 @@ nav>img {
 }
 
 
-/* MAIN CONTENT MAIN CONTENT */
-
-
-
-
-
-
-
-
-
 /* Footer Logos & Address */
 footer {
   margin: 4rem 0 0;
   padding: 1.5rem 8vw;
-  background-color: hsl(220, 100%, 59%);
+  background-color: hsla(220, 94%, 25%, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -313,6 +350,10 @@ footer {
   }
   .header-image-container img {
     aspect-ratio: 5/2;
+  }
+
+  .program-tiles {
+    grid-template-columns: 1fr;
   }
 
   #jabar-kahiji-gallery {
