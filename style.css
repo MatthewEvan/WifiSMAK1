@@ -170,7 +170,6 @@ nav>img {
 
 /* MAIN CONTENT MAIN CONTENT */
 #program-akademik {
-  margin: 0 8vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -183,19 +182,18 @@ nav>img {
 .program-tiles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  padding: 1rem;
+  gap: 1.5rem;
+  padding: 1rem 8vw;
 
   /* background styling */
   background: url(assets/images/BackgroundTambahan.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  border-radius: 1rem;
 }
 
 .program-tiles > div {
-  padding: 1rem;
+  padding: 1.5rem;
   /* background formatting  */
   background: hsla(0, 0%, 87%, 0.65);
   border-radius: 1rem;
@@ -217,6 +215,85 @@ nav>img {
 .program-tiles > div p {
   font-weight: 500;
   text-align: justify;
+}
+
+
+#visi-misi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0 8vw;
+}
+#visi-misi > div:nth-child(1),
+#visi-misi > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.visi, .misi {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid hsl(240, 3%, 23%);
+}
+.visi h3, .misi h3{
+  flex: 1;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: underline hsla(220, 78%, 51%, 0.8) 0.2rem;
+}
+.visi p, .misi ul {
+  flex: 4;
+  font-weight: 500;
+}
+
+.misi ul {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.misi ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.misi ul li span {
+  background-color: hsla(220, 78%, 51%, 0.8);
+  padding: 0.35rem 0.7rem;
+  border-radius: 100%;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+
+.beda {
+  display: flex;
+  gap: 1.5rem;
+}
+.beda h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: underline hsla(220, 78%, 51%, 0.8) 0.2rem;
+  padding-right: 1.5rem;
+  border-right: 2px solid hsl(240, 3%, 23%);
+}
+.beda ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.beda ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.beda ul li p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: underline hsla(220, 78%, 51%, 0.8) 0.2rem;
+}
+.beda ul li svg {
+  height: 2rem;
 }
 
 
@@ -249,7 +326,7 @@ nav>img {
   gap: 0.5rem;
   background-color: hsl(203, 100%, 92%);
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
   flex: 1;
   transition: all 350ms ease-in-out;
 }
@@ -270,6 +347,7 @@ nav>img {
 .best-tile-header svg {
   height: 1.5rem;
 }
+
 
 
 /* Jabar Kahiji Image Gallery */
@@ -365,6 +443,15 @@ footer {
   .header-description h1 span {
     font-size: 3rem;
   }
+  #visi-misi > div:nth-child(1),
+  #visi-misi > div:nth-child(2) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .visi p {
+    text-align: center;
+  }
+
   .best-tiles {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -411,6 +498,27 @@ footer {
   .program-tiles {
     grid-template-columns: 1fr;
   }
+
+  #visi-misi {
+    align-items: center;
+  }
+  .misi h3 {
+    margin-bottom: 0.5rem;
+  }
+  .misi ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .beda {
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+  }
+  .beda h3 {
+    padding-right: none;
+    border-right: none;
+  }
+
   #jabar-kahiji-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -432,6 +540,21 @@ footer {
   .container-align{
     gap: 2rem;
   }
+
+  #visi-misi {
+    gap: 1.5rem;
+  }
+  .visi, .misi {
+    padding-bottom: 1.5rem;
+  }
+  .visi p {
+    text-align: left;
+  }
+  .beda ul {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
   .best-tiles {
     grid-template-columns: 1fr;
   }
