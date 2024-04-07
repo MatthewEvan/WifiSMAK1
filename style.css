@@ -203,6 +203,11 @@ nav>img {
   border: 2px solid hsla(0, 0%, 100%, 0.34);
   transition: all 350ms ease;
 }
+
+.program-tiles > div:hover {
+  background: hsla(0, 0%, 87%, 0.8);
+}
+
 .program-tiles > div h4 {
   font-size: 2rem;
   font-weight: 800;
@@ -246,7 +251,14 @@ nav>img {
   border-radius: 1rem;
   padding: 1rem;
   flex: 1;
+  transition: all 350ms ease-in-out;
 }
+
+.best-tiles > div:hover {
+  scale: 1.025;
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+}
+
 .best-tile-header {
   display: flex;
   align-items: center;
