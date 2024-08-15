@@ -204,6 +204,7 @@ nav>img {
 
 .program-tiles > div:hover {
   background: hsla(0, 0%, 87%, 0.8);
+  scale: 1.025;
 }
 
 .program-tiles > div h4 {
@@ -250,7 +251,7 @@ nav>img {
 .misi ul {
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 .misi ul li {
   display: flex;
@@ -264,6 +265,9 @@ nav>img {
   font-size: 1.25rem;
   font-weight: 800;
   color: hsl(0, 0%, 100%);
+}
+.misi ul li:first-child span {
+  padding: 0.35rem 0.85rem 0.35rem 0.75rem;
 }
 
 .beda {
@@ -293,7 +297,7 @@ nav>img {
   text-decoration: underline hsla(220, 78%, 51%, 0.8) 0.2rem;
 }
 .beda ul li svg {
-  height: 2rem;
+  height: 1.5rem;
 }
 
 
